@@ -8,7 +8,7 @@
 
 "EMNLP":
   url: https://aclanthology.org/venues/emnlp/
-  color: "#F29105"
+  color: "#E00422"
 
 "CVPR":
   url: https://cvpr.thecvf.com/
@@ -16,7 +16,7 @@
 
 "Neurocomputing":
   url: https://www.sciencedirect.com/journal/neurocomputing/
-  color: "E00422"
+  color: "F29105"
 
 "ICML":
   url: https://icml.cc/
