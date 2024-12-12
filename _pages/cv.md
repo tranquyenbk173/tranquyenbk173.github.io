@@ -1,7 +1,7 @@
 ---
 layout: cv
 permalink: /cv/
-title: CV
+title: cv
 nav: false
 nav_order: 4
 subtitle: Available in PDF format
