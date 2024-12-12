@@ -19,4 +19,6 @@ My name is Quyen Tran, I am Research Resident at [VinAI Research](https://www.vi
 
 My research primarily centers on **Continual Learning, Transfer Learning, and Robust Machine Learning**, with the goal of developing ***truly intelligent and reliable systems***. These systems are expected to actively <u>*accumulate and consolidate knowledge*</u> over time while also being <u>*safe, private, and trustworthy*.</u>
 
+Besides research, I'm a big fan of movies, chess, and the sky <3 
+
 <!-- Before that, I graduated from [Hanoi University of Science & Technology (HUST)](https://www.hust.edu.vn/) with an excellent Bachelor's degree in Computer Science. During my time here, I was a research student at [Data Science Laboratory](http://ds.soict.hust.edu.vn/), advised by Dr.[Linh Ngo](https://users.soict.hust.edu.vn/linhnv/) and Professor [Khoat Than](https://users.soict.hust.edu.vn/khoattq/). -->
