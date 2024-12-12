@@ -1,115 +1,192 @@
----
----
 
-@string{aps = {American Physical Society,}}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+
+@article{phan2024enhancing,
+  abbr = {NeurIPS},
+  title={Enhancing Domain Adaptation through Prompt Gradient Alignment},
+  author={Phan*, Hoang and  Lam Tran* and Tran*, Quyen and  Le, Trung},
+  selected = {true},
+  journal={Advances in Neural Information Processing Systems},
+  published={true},
+  pdf={https://arxiv.org/abs/2406.09353},
+  abstract={Prior Unsupervised Domain Adaptation (UDA) methods often aim to train a domain-invariant feature extractor, which may hinder the model from learning sufficiently discriminative features. To tackle this, a line of works based on prompt learning leverages the power of large-scale pre-trained vision-language models to learn both domain-invariant and specific features through a set of domain-agnostic and domain-specific learnable prompts. Those studies typically enforce invariant constraints on representation, output, or prompt space to learn such prompts. Differently, we cast UDA as a multiple-objective optimization problem in which each objective is represented by a domain loss. Under this new framework, we propose aligning per-objective gradients to foster consensus between them. Additionally, to prevent potential overfitting when fine-tuning this deep learning architecture, we penalize the norm of these gradients. To achieve these goals, we devise a practical gradient update procedure that can work under both single-source and multi-source UDA. Empirically, our method consistently surpasses other prompt-based baselines by a large margin on different UDA benchmarks},
+  year={2024}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@article{tran-etal-2024-preserving,
+  abbr = {EMNLP},
+  title={Preserving Generalization of Language models in Few-shot Continual Relation Extraction},
+  author={Tran*, Quyen and Thanh Nguyen* and Anh Nguyen* and Nam Le and Trung Le and Linh Ngo and Thien Nguyen.},
+  selected = {true},
+  journal={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
+  published={true},
+  pdf={https://aclanthology.org/2024.emnlp-main.763/},
+  abstract={Few-shot Continual Relations Extraction (FCRE) is an emerging and dynamic area of study where models can sequentially integrate knowledge from new relations with limited labeled data while circumventing catastrophic forgetting and preserving prior knowledge from pre-trained backbones. In this work, we introduce a novel method that leverages often-discarded language model heads. By employing these components via a mutual information maximization strategy, our approach helps maintain prior knowledge from the pre-trained backbone and strategically aligns the primary classification head, thereby enhancing model performance. Furthermore, we explore the potential of Large Language Models (LLMs), renowned for their wealth of knowledge, in addressing FCRE challenges. Our comprehensive experimental results underscore the efficacy of the proposed method and offer valuable insights for future work.},
+  year={2024}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+
+
+@article{dao-etal-2024-lifelong,
+  abbr = {EMNLP},
+  title = {Lifelong Event Detection via Optimal Transport},
+  author = {Viet Dao* and Cuong Pham* and Quyen Tran* and Thanh-Thien Le and Linh Ngo and Thien Nguyen.},
+  selected = {true},
+  journal={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
+  published={true},
+  abstract={Continual Event Detection (CED) poses a formidable challenge due to the catastrophic forgetting phenomenon, where learning new tasks (with new coming event types) hampers performance on previous ones. In this paper, we introduce a novel approach, Lifelong Event Detection via Optimal Transport (**LEDOT**), that leverages optimal transport principles to align the optimization of our classification module with the intrinsic nature of each class, as defined by their pre-trained language modeling. Our method integrates replay sets, prototype latent representations, and an innovative Optimal Transport component. Extensive experiments on MAVEN and ACE datasets demonstrate LEDOT’s superior performance, consistently outperforming state-of-the-art baselines. The results underscore LEDOT as a pioneering solution in continual event detection, offering a more effective and nuanced approach to addressing catastrophic forgetting in evolving environments.},
+  year={2024},
+  pdf={https://aclanthology.org/2024.emnlp-main.701/}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
+
+
+@article{nguyen2024fewshot,
+  abbr = {AAAI},
+  title={Few-Shot, No Problem: Descriptive Continual Relation Extraction},
+  author={Thanh Nguyen* and Anh Le* and Quyen Tran* and Thanh-Thien Le and Linh Ngo and Thien Nguyen.},
+  selected = {true},
+  published={true},
+  abstract={Few-shot Continual Relation Extraction is a crucial challenge for enabling AI systems to identify and adapt to evolving relationships in dynamic real-world domains. Traditional memory-based approaches often overfit to limited samples, failing to reinforce old knowledge, with the scarcity of data in few-shot scenarios further exacerbating these issues by hindering effective data augmentation in the latent space. In this paper, we propose a novel retrieval-based solution, starting with a large language model to generate descriptions for each relation. From these descriptions, we introduce a bi-encoder retrieval training paradigm to enrich both sample and class representation learning. Leveraging these enhanced representations, we design a retrieval-based prediction method where each sample "retrieves" the best fitting relation via a reciprocal rank fusion score that integrates both relation description vectors and class prototypes. Extensive experiments on multiple datasets demonstrate that our method significantly advances the state-of-the-art by maintaining robust performance across sequential tasks, effectively addressing catastrophic forgetting.},
+  year={2025}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+
+
+@article{tran2022continual,
+  abbr = {Preprint},
+  title={Continual Learning with Optimal Transport based Mixture Model},
+  author={Tran, Quyen and Phan, Hoang  and Than, Khoat and Phung, Dinh and Le, Trung},
+  selected = {true},
+  published={true},
+  journal={Preprint},
+  pdf={https://arxiv.org/abs/2211.16780},
+  abstract={Online Class Incremental learning (CIL) is a challenging setting in Continual Learning (CL), wherein data of new tasks arrive in incoming streams and online learning models need to handle incoming data streams without revisiting previous ones. Existing works used a single centroid adapted with incoming data streams to characterize a class. This approach possibly exposes limitations when the incoming data stream of a class is naturally multimodal. To address this issue, in this work, we first propose an online mixture model learning approach based on nice properties of the mature optimal transport theory (OT-MM). Specifically, the centroids and covariance matrices of the mixture model are adapted incrementally according to incoming data streams. The advantages are two-fold: (i)  we can characterize more accurately complex data streams and (ii) by using centroids for each class produced by OT-MM, we can estimate the similarity of an unseen example to each class more reasonably when doing inference. Moreover, to combat the catastrophic forgetting in the CIL scenario, we further propose Dynamic Preservation. Particularly, after performing the dynamic preservation technique across data streams, the latent representations of the classes in the old and new tasks become more condensed themselves and more separate from each other. Together with a contraction feature extractor, this technique facilitates the model in mitigating the catastrophic forgetting. The experimental results on real-world datasets show that our proposed method can significantly outperform the current state-of-the-art baselines.},
+  year={2022}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@article{TRAN202289,
+  abbr = {Neurocomputing},
+  title={From Implicit to Explicit Feedback: A deep neural network for modeling sequential behaviors and long-short term preferences of online users},
+  author={Quyen Tran* and Lam Tran* and Linh Chu Hai and Ngo Van Linh and Khoat Than.},
+  selected = {true},
+  published={true},
+  journal={Neurocomputing},
+  pdf={https://www.sciencedirect.com/science/article/abs/pii/S0925231222000418},
+  abstract={Online Class Incremental learning (CIL) is a challenging setting in Continual Learning (CL), wherein data of new tasks arrive in incoming streams and online learning models need to handle incoming data streams without revisiting previous ones. Existing works used a single centroid adapted with incoming data streams to characterize a class. This approach possibly exposes limitations when the incoming data stream of a class is naturally multimodal. To address this issue, in this work, we first propose an online mixture model learning approach based on nice properties of the mature optimal transport theory (OT-MM). Specifically, the centroids and covariance matrices of the mixture model are adapted incrementally according to incoming data streams. The advantages are two-fold: (i)  we can characterize more accurately complex data streams and (ii) by using centroids for each class produced by OT-MM, we can estimate the similarity of an unseen example to each class more reasonably when doing inference. Moreover, to combat the catastrophic forgetting in the CIL scenario, we further propose Dynamic Preservation. Particularly, after performing the dynamic preservation technique across data streams, the latent representations of the classes in the old and new tasks become more condensed themselves and more separate from each other. Together with a contraction feature extractor, this technique facilitates the model in mitigating the catastrophic forgetting. The experimental results on real-world datasets show that our proposed method can significantly outperform the current state-of-the-art baselines.},
+  year={2022}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+
+@article{tran2024boosting,
+  abbr = {Preprint},
+  title={Boosting Multiple Views for pretrained-based Continual Learning},
+  author={Quyen Tran and Tung Lam Tran and Khanh Doan and Toan Tran and Khoat Than and Dinh Phung and Trung Le},
+  selected = {true},
+  published={true},
+  journal={Preprint},
+  pdf={https://openreview.net/forum?id=AZR4R3lw7y},
+  year={2024},
+  abstract={Recent research has shown that Random Projection (RP) can effectively improve the performance of pre-trained models in Continual learning (CL). The authors hypothesized that using RP to map features onto a higher-dimensional space can make them more linearly separable. In this work, we theoretically analyze the role of RP and present its benefits for improving the model’s generalization ability in each task and facilitating CL overall. Additionally, we take this result to the next level by proposing a Multi-View Random Projection scheme for a stronger ensemble classifier. In particular, we train a set of linear experts, among which diversity is encouraged based on the principle of AdaBoost, which was initially very challenging to apply to CL. Moreover, we employ a task-based adaptive backbone with distinct prompts dedicated to each task for better representation learning. To properly select these task-specific components and mitigate potential feature shifts caused by misprediction, we introduce a simple yet effective technique called the self-improvement process. Experimentally, our method consistently outperforms state-of-the-art baselines across a wide range of datasets.}
+
 }
 
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+@article{truong2024flat,
+  abbr = {Preprint},
+  title={Improving Generalization with Flat Hilbert Bayesian Inference},
+  author={Tuan Truong and Quyen Tran and Ngoc-Quan Pham and Dinh Phung and Nhat Ho and Trung Le},
+  selected = {true},
+  published={true},
+  journal={Preprint},
+  pdf={https://openreview.net/forum?id=xZ2lTzfyFv},
+  year={2024},
+  abstract={We introduce Flat Hilbert Bayesian Inference (FHBI), an algorithm designed to enhance generalization in Bayesian inference. Our approach involves an iterative two-step procedure with an adversarial functional perturbation step and a functional descent step within the reproducing kernel Hilbert spaces. This methodology is supported by a theoretical analysis that extends previous findings on generalization ability from finite-dimensional Euclidean spaces to infinite-dimensional functional spaces. To evaluate the effectiveness of FHBI, we conduct comprehensive comparisons against seven baseline methods on the VTAB-1K benchmark, which encompasses 19 diverse datasets across various domains with diverse semantics. Empirical results demonstrate that FHBI consistently outperforms the baselines by notable margins, highlighting its practical efficacy.}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+
+@article{tran2024taxonomy,
+  abbr = {Preprint},
+  title={Leveraging Hierarchical Taxonomies in Prompt-based Continual Learning},
+  author={Quyen Tran and Hoang Phan and Minh Le and Tuan Truong and Dinh Phung and Linh Ngo and Thien Nguyen and Nhat Ho and Trung Le},
+  selected = {true},
+  published={true},
+  journal={Preprint},
+  pdf={https://arxiv.org/abs/2410.04327},
+  year={2024},
+  abstract={Drawing inspiration from human learning behaviors, this work proposes a novel approach to mitigate catastrophic forgetting in Prompt-based Continual Learning models by exploiting the relationships between continuously emerging class data. We find that applying human habits of organizing and connecting information can serve as an efficient strategy when training deep learning models. Specifically, by building a hierarchical tree structure based on the expanding set of labels, we gain fresh insights into the data, identifying groups of similar classes could easily cause confusion. Additionally, we delve deeper into the hidden connections between classes by exploring the original pretrained model's behavior through an optimal transport-based approach. From these insights, we propose a novel regularization loss function that encourages models to focus more on challenging knowledge areas, thereby enhancing overall performance. Experimentally, our method demonstrated significant superiority over the most robust state-of-the-art models on various benchmarks.}
 }
+
+@article{phan2024mtlsam,
+  abbr = {Preprint},
+  title={Improving multi-task learning via seeking task-based flat regions},
+  author={Hoang Phan and Lam Tran and Quyen Tran and Ngoc N Tran and Nhat Ho and Dinh Phung and Trung Le},
+  selected = {true},
+  published={true},
+  journal={Preprint},
+  pdf={https://arxiv.org/abs/2211.13723},
+  year={2024},
+  abstract={Multi-Task Learning (MTL) is a widely-used and powerful learning paradigm for training deep neural networks that allows learning more than one objective by a single backbone. Compared to training tasks separately, MTL significantly reduces computational costs, improves data efficiency, and potentially enhances model performance by leveraging knowledge across tasks. Hence, it has been adopted in a variety of applications, ranging from computer vision to natural language processing and speech recognition. Among them, there is an emerging line of work in MTL that focuses on manipulating the task gradient to derive an ultimate gradient descent direction to benefit all tasks. Despite achieving impressive results on many benchmarks, directly applying these approaches without using appropriate regularization techniques might lead to suboptimal solutions on real-world problems. In particular, standard training that minimizes the empirical loss on the training data can easily suffer from overfitting to low-resource tasks or be spoiled by noisy-labeled ones, which can cause negative transfer between tasks and overall performance drop. To alleviate such problems, we propose to leverage a recently introduced training method, named Sharpness-aware Minimization, which can enhance model generalization ability on single-task learning. Accordingly, we present a novel MTL training methodology, encouraging the model to find task-based flat minima for coherently improving its generalization capability on all tasks. Finally, we conduct comprehensive experiments on a variety of applications to demonstrate the merit of our proposed approach to …}
+}
+
+@article{doan2023dfmcl,
+  abbr = {Preprint},
+  title={Class-prototype conditional diffusion model for continual learning with generative replay},
+  author={Khanh Doan and Quyen Tran and Lam Tran and Tuan Nguyen and Dinh Phung and Trung Le},
+  selected = {true},
+  published={true},
+  journal={Preprint},
+  pdf={https://arxiv.org/abs/2312.06710},
+  year={2023},
+  abstract={Mitigating catastrophic forgetting is a key hurdle in continual learning. Deep Generative Replay (GR) provides techniques focused on generating samples from prior tasks to enhance the model's memory capabilities. With the progression in generative AI, generative models have advanced from Generative Adversarial Networks (GANs) to the more recent Diffusion Models (DMs). A major issue is the deterioration in the quality of generated data compared to the original, as the generator continuously self-learns from its outputs. This degradation can lead to the potential risk of catastrophic forgetting occurring in the classifier. To address this, we propose the Class-Prototype Conditional Diffusion Model (CPDM), a GR-based approach for continual learning that enhances image quality in generators and thus reduces catastrophic forgetting in classifiers. The cornerstone of CPDM is a learnable class-prototype that captures the core characteristics of images in a given class. This prototype, integrated into the diffusion model's denoising process, ensures the generation of high-quality images. It maintains its effectiveness for old tasks even when new tasks are introduced, preserving image generation quality and reducing the risk of catastrophic forgetting in classifiers. Our empirical studies on diverse datasets demonstrate that our proposed method significantly outperforms existing state-of-the-art models, highlighting its exceptional ability to preserve image quality and enhance the model's memory retention.}
+}
+
+@article{tran2023koppa,
+  abbr = {Preprint},
+  title={Improving Prompt-based Continual Learning with Key-Query Orthogonal Projection and Prototype-based One-Versus-All},
+  author={Quyen Tran and Lam Tran and Khoat Than and Toan Tran and Dinh Phung and Trung Le},
+  selected = {true},
+  published={true},
+  journal={Preprint},
+  pdf={https://arxiv.org/abs/2311.15414},
+  year={2023},
+  abstract={Mitigating catastrophic forgetting is a key hurdle in continual learning. Deep Generative Replay (GR) provides techniques focused on generating samples from prior tasks to enhance the model's memory capabilities. With the progression in generative AI, generative models have advanced from Generative Adversarial Networks (GANs) to the more recent Diffusion Models (DMs). A major issue is the deterioration in the quality of generated data compared to the original, as the generator continuously self-learns from its outputs. This degradation can lead to the potential risk of catastrophic forgetting occurring in the classifier. To address this, we propose the Class-Prototype Conditional Diffusion Model (CPDM), a GR-based approach for continual learning that enhances image quality in generators and thus reduces catastrophic forgetting in classifiers. The cornerstone of CPDM is a learnable class-prototype that captures the core characteristics of images in a given class. This prototype, integrated into the diffusion model's denoising process, ensures the generation of high-quality images. It maintains its effectiveness for old tasks even when new tasks are introduced, preserving image generation quality and reducing the risk of catastrophic forgetting in classifiers. Our empirical studies on diverse datasets demonstrate that our proposed method significantly outperforms existing state-of-the-art models, highlighting its exceptional ability to preserve image quality and enhance the model's memory retention.}
+}
+
+@article{le2024prefix,
+  abbr = {Preprint},
+  title={Revisiting Prefix-tuning: Statistical Benefits of Reparameterization among Prompts},
+  author={Minh Le and Chau Nguyen and Huy Nguyen and Quyen Tran and Trung Le and Nhat Ho},
+  selected = {true},
+  published={true},
+  journal={Preprint},
+  pdf={https://arxiv.org/abs/2410.02200},
+  year={2024},
+  abstract={Prompt-based techniques, such as prompt-tuning and prefix-tuning, have gained prominence for their efficiency in fine-tuning large pre-trained models. Despite their widespread adoption, the theoretical foundations of these methods remain limited. For instance, in prefix-tuning, we observe that a key factor in achieving performance parity with full fine-tuning lies in the reparameterization strategy. However, the theoretical principles underpinning the effectiveness of this approach have yet to be thoroughly examined. Our study demonstrates that reparameterization is not merely an engineering trick but is grounded in deep theoretical foundations. Specifically, we show that the reparameterization strategy implicitly encodes a shared structure between prefix key and value vectors. Building on recent insights into the connection between prefix-tuning and mixture of experts models, we further illustrate that this shared structure significantly improves sample efficiency in parameter estimation compared to non-shared alternatives. The effectiveness of prefix-tuning across diverse tasks is empirically confirmed to be enhanced by the shared structure, through extensive experiments in both visual and language domains. Additionally, we uncover similar structural benefits in prompt-tuning, offering new perspectives on its success. Our findings provide theoretical and empirical contributions, advancing the understanding of prompt-based methods and their underlying mechanisms.}
+}
+
+@article{doan2024connect,
+  abbr = {Preprint},
+  title={Connective Viewpoints of Signal-to-Noise Diffusion Models},
+  author={Khanh Doan and Long Tung Vuong and Tuan Nguyen and Anh Tuan Bui and Quyen Tran and Thanh-Toan Do and Dinh Phung and Trung Le},
+  selected = {true},
+  published={true},
+  journal={Preprint},
+  pdf={https://arxiv.org/abs/2408.04221},
+  year={2024},
+  abstract={Diffusion models (DM) have become fundamental components of generative models, excelling across various domains such as image creation, audio generation, and complex data interpolation. Signal-to-Noise diffusion models constitute a diverse family covering most state-of-the-art diffusion models. While there have been several attempts to study Signal-to-Noise (S2N) diffusion models from various perspectives, there remains a need for a comprehensive study connecting different viewpoints and exploring new perspectives. In this study, we offer a comprehensive perspective on noise schedulers, examining their role through the lens of the signal-to-noise ratio (SNR) and its connections to information theory. Building upon this framework, we have developed a generalized backward equation to enhance the performance of the inference process.}
+}
+
+@article{nguyen2024anostics,
+  abbr = {Preprint},
+  title={Agnostic Sharpness-Aware Minimization},
+  author={Van-Anh Nguyen and Quyen Tran and Tuan Truong and Thanh-Toan Do and Dinh Phung and Trung Le},
+  selected = {true},
+  published={true},
+  journal={Preprint},
+  pdf={https://arxiv.org/abs/2406.07107},
+  year={2024},
+  abstract={Sharpness-aware minimization (SAM) has been instrumental in improving deep neural network training by minimizing both the training loss and the sharpness of the loss landscape, leading the model into flatter minima that are associated with better generalization properties. In another aspect, Model-Agnostic Meta-Learning (MAML) is a framework designed to improve the adaptability of models. MAML optimizes a set of meta-models that are specifically tailored for quick adaptation to multiple tasks with minimal fine-tuning steps and can generalize well with limited data. In this work, we explore the connection between SAM and MAML, particularly in terms of enhancing model generalization. We introduce Agnostic-SAM, a novel approach that combines the principles of both SAM and MAML. Agnostic-SAM adapts the core idea of SAM by optimizing the model towards wider local minima using training data, while concurrently maintaining low loss values on validation data. By doing so, it seeks flatter minima that are not only robust to small perturbations but also less vulnerable to data distributional shift problems. Our experimental results demonstrate that Agnostic-SAM significantly improves generalization over baselines across a range of datasets and under challenging conditions such as noisy labels and data limitation.}
+}
+
+
+

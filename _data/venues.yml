@@ -1,9 +1,30 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"AAAI":
+  url: http://pakdd.org/
+  color: "#848482"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#0048BA"
 
-"Vision":
-  color: "#009f36"
+"EMNLP":
+  url: https://aclanthology.org/venues/emnlp/
+  color: "#F29105"
+
+"CVPR":
+  url: https://cvpr.thecvf.com/
+  color: "#B284BE"
+
+# "AISTATS":
+#   url: http://aistats.org/aistats2023/
+#   color: "E00422"
+
+"Neurocomputing":
+  url: https://www.sciencedirect.com/journal/neurocomputing/
+  color: "E00422"
+
+"ICML":
+  url: https://icml.cc/
+  color: "#4E6C50"
+
+"Preprint":
+  color: "#ffdddd"
