@@ -6,19 +6,19 @@
     "email": "tranquyenhd17@gmail.com",
     "phone": "(+84) 37573-0788",
     "url": "https://tranquyenbk173.github.io/",
-    "summary": "Interested in developing truly intelligent and reliable systems",
+    "summary": "My research primarily centers on Continual Learning, Transfer Learning, and Robust Machine Learning, with the goal of developing truly intelligent and reliable systems. These systems are expected to actively accumulate and consolidate knowledge over time while also being safe, private, and trustworthy.",
     "location": {
-      "address": "",
+      "address": "-",
       "postalCode": "100000",
       "city": "Hanoi",
-      "countryCode": "Viet Nam",
+      "countryCode": "Vietnam",
       "region": "Hanoi"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "Homepage",
+        "username": "tranquyenbk173",
+        "url": "https://tranquyenbk173.github.io/"
       }
     ]
   }
