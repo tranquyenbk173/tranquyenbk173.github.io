@@ -15,7 +15,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-My name is Quyen Tran, I am Research Resident at [VinAI Research](https://www.vinai.io/), where I am very fortunate to be advised by Professors [Trung Le](https://research.monash.edu/en/persons/trung-le), [Dinh Phung](https://dinhphung.ml/), [Nhat Ho](https://nhatptnk8912.github.io/) and [Thien Nguyen](https://ix.cs.uoregon.edu/~thien/) (random order).
+My name is Quyen Tran, I am Research Resident at [Qualcomm AI Research](https://www.qualcomm.com/research/artificial-intelligence), and previously at [VinAI Research](https://www.vinai.io/), where I am very fortunate to be advised by Professors [Trung Le](https://research.monash.edu/en/persons/trung-le), [Dinh Phung](https://dinhphung.ml/), [Nhat Ho](https://nhatptnk8912.github.io/) and [Thien Nguyen](https://ix.cs.uoregon.edu/~thien/) and Doctor [Dat Nguyen](https://datquocnguyen.github.io/) (random order).
+
 
 My research primarily centers on **Continual Learning, Transfer Learning, and Robust Machine Learning**, with the goal of developing ***truly intelligent and reliable systems***. These systems are expected to actively <u>*accumulate and consolidate knowledge*</u> over time while also being <u>*safe, private, and trustworthy*.</u>
 

@@ -12,7 +12,7 @@
 
 "CVPR":
   url: https://cvpr.thecvf.com/
-  color: "#B284BE"
+  color: "#ff5630"
 
 "Neurocomputing":
   url: https://www.sciencedirect.com/journal/neurocomputing/
@@ -20,15 +20,15 @@
 
 "ICML":
   url: https://icml.cc/
-  color: "#9561e2"
+  color: "#0048BA"
 
 "NAACL":
   url: https://naacl.org/
-  color: "#f66d9b"
+  color: "#E00422"
 
 "ICLR":
   url: https://iclr.cc/
-  color: "#38c172"
+  color: "#0048BA"
 
 "Preprint":
   color: "#ffdddd"

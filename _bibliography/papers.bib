@@ -37,18 +37,6 @@
 
 
 
-@article{nguyen2024fewshot,
-  abbr = {AAAI},
-  title={Few-Shot, No Problem: Descriptive Continual Relation Extraction},
-  author={Thanh Nguyen* and Anh Le* and Tran*, Quyen and Thien Le* and Linh Ngo and Thien Nguyen.},
-  selected = {true},
-  published={true},
-  abstract={Few-shot Continual Relation Extraction is a crucial challenge for enabling AI systems to identify and adapt to evolving relationships in dynamic real-world domains. Traditional memory-based approaches often overfit to limited samples, failing to reinforce old knowledge, with the scarcity of data in few-shot scenarios further exacerbating these issues by hindering effective data augmentation in the latent space. In this paper, we propose a novel retrieval-based solution, starting with a large language model to generate descriptions for each relation. From these descriptions, we introduce a bi-encoder retrieval training paradigm to enrich both sample and class representation learning. Leveraging these enhanced representations, we design a retrieval-based prediction method where each sample "retrieves" the best fitting relation via a reciprocal rank fusion score that integrates both relation description vectors and class prototypes. Extensive experiments on multiple datasets demonstrate that our method significantly advances the state-of-the-art by maintaining robust performance across sequential tasks, effectively addressing catastrophic forgetting.},
-  year={2025},
-  pdf={https://ojs.aaai.org/index.php/AAAI/article/view/34715}
-}
-
-
 
 @article{tran2022continual,
   abbr = {Preprint},
@@ -75,23 +63,10 @@
 }
 
 
-@article{tran2024boosting,
-  abbr = {ICLR},
-  title={Boosting Multiple Views for pretrained-based Continual Learning},
-  author={Quyen Tran* and Lam Tran* and Khanh Doan and Toan Tran and Khoat Than and Dinh Phung and Trung Le},
-  selected = {false},
-  published={true},
-  journal={Preprint},
-  pdf={https://openreview.net/forum?id=AZR4R3lw7y},
-  year={2025},
-  abstract={Recent research has shown that Random Projection (RP) can effectively improve the performance of pre-trained models in Continual learning (CL). The authors hypothesized that using RP to map features onto a higher-dimensional space can make them more linearly separable. In this work, we theoretically analyze the role of RP and present its benefits for improving the model’s generalization ability in each task and facilitating CL overall. Additionally, we take this result to the next level by proposing a Multi-View Random Projection scheme for a stronger ensemble classifier. In particular, we train a set of linear experts, among which diversity is encouraged based on the principle of AdaBoost, which was initially very challenging to apply to CL. Moreover, we employ a task-based adaptive backbone with distinct prompts dedicated to each task for better representation learning. To properly select these task-specific components and mitigate potential feature shifts caused by misprediction, we introduce a simple yet effective technique called the self-improvement process. Experimentally, our method consistently outperforms state-of-the-art baselines across a wide range of datasets.}
-
-}
-
 @article{truong2024flat,
   abbr = {ICML},
   title={Improving Generalization with Flat Hilbert Bayesian Inference},
-  author={Tuan Truong* and Tran*, Quyen and Ngoc-Quan Pham and Dinh Phung and Nhat Ho and Trung Le},
+  author={Tuan Truong* and Quyen Tran* and Ngoc-Quan Pham and Dinh Phung and Nhat Ho and Trung Le},
   selected = {true},
   published={true},
   journal={Preprint},
@@ -161,17 +136,7 @@
   abstract={Mitigating catastrophic forgetting is a key hurdle in continual learning. Deep Generative Replay (GR) provides techniques focused on generating samples from prior tasks to enhance the model's memory capabilities. With the progression in generative AI, generative models have advanced from Generative Adversarial Networks (GANs) to the more recent Diffusion Models (DMs). A major issue is the deterioration in the quality of generated data compared to the original, as the generator continuously self-learns from its outputs. This degradation can lead to the potential risk of catastrophic forgetting occurring in the classifier. To address this, we propose the Class-Prototype Conditional Diffusion Model (CPDM), a GR-based approach for continual learning that enhances image quality in generators and thus reduces catastrophic forgetting in classifiers. The cornerstone of CPDM is a learnable class-prototype that captures the core characteristics of images in a given class. This prototype, integrated into the diffusion model's denoising process, ensures the generation of high-quality images. It maintains its effectiveness for old tasks even when new tasks are introduced, preserving image generation quality and reducing the risk of catastrophic forgetting in classifiers. Our empirical studies on diverse datasets demonstrate that our proposed method significantly outperforms existing state-of-the-art models, highlighting its exceptional ability to preserve image quality and enhance the model's memory retention.}
 }
 
-@article{le2024prefix,
-  abbr = {ICLR},
-  title={Revisiting Prefix-tuning: Statistical Benefits of Reparameterization among Prompts},
-  author={Minh Le and Chau Nguyen and Huy Nguyen and Tran, Quyen and Trung Le and Nhat Ho},
-  selected = {false},
-  published={true},
-  journal={Preprint},
-  pdf={https://arxiv.org/abs/2410.02200},
-  year={2025},
-  abstract={Prompt-based techniques, such as prompt-tuning and prefix-tuning, have gained prominence for their efficiency in fine-tuning large pre-trained models. Despite their widespread adoption, the theoretical foundations of these methods remain limited. For instance, in prefix-tuning, we observe that a key factor in achieving performance parity with full fine-tuning lies in the reparameterization strategy. However, the theoretical principles underpinning the effectiveness of this approach have yet to be thoroughly examined. Our study demonstrates that reparameterization is not merely an engineering trick but is grounded in deep theoretical foundations. Specifically, we show that the reparameterization strategy implicitly encodes a shared structure between prefix key and value vectors. Building on recent insights into the connection between prefix-tuning and mixture of experts models, we further illustrate that this shared structure significantly improves sample efficiency in parameter estimation compared to non-shared alternatives. The effectiveness of prefix-tuning across diverse tasks is empirically confirmed to be enhanced by the shared structure, through extensive experiments in both visual and language domains. Additionally, we uncover similar structural benefits in prompt-tuning, offering new perspectives on its success. Our findings provide theoretical and empirical contributions, advancing the understanding of prompt-based methods and their underlying mechanisms.}
-}
+
 
 @article{doan2024connect,
   abbr = {Preprint},
@@ -197,6 +162,45 @@
   abstract={Sharpness-aware minimization (SAM) has been instrumental in improving deep neural network training by minimizing both the training loss and the sharpness of the loss landscape, leading the model into flatter minima that are associated with better generalization properties. In another aspect, Model-Agnostic Meta-Learning (MAML) is a framework designed to improve the adaptability of models. MAML optimizes a set of meta-models that are specifically tailored for quick adaptation to multiple tasks with minimal fine-tuning steps and can generalize well with limited data. In this work, we explore the connection between SAM and MAML, particularly in terms of enhancing model generalization. We introduce Agnostic-SAM, a novel approach that combines the principles of both SAM and MAML. Agnostic-SAM adapts the core idea of SAM by optimizing the model towards wider local minima using training data, while concurrently maintaining low loss values on validation data. By doing so, it seeks flatter minima that are not only robust to small perturbations but also less vulnerable to data distributional shift problems. Our experimental results demonstrate that Agnostic-SAM significantly improves generalization over baselines across a range of datasets and under challenging conditions such as noisy labels and data limitation.}
 }
 
+
+
+@article{binh2025lowrank,
+  abbr = {CVPR},
+  title={Low-Rank Adaptation in Multilinear Operator Networks for Security-Preserving Incremental Learning},
+  author={Binh Ta and Duc Nguyen and Quyen Tran and Toan Tran and Tung Pham},
+  selected = {false},
+  published={true},
+  journal={Preprint},
+  pdf={https://openreview.net/forum?id=QR85vjmNWf},
+  year={2025},
+  abstract={In security-sensitive fields, data should be encrypted to protect against unauthorized access and maintain confidentiality throughout processing. However, traditional networks like ViTs and CNNs return different results when processing original data versus its encrypted form, meaning that they require data to be decrypted, posing a security risk by exposing sensitive information. One solution for this issue is using polynomial networks, including state-of-the-art Multilinear Operator Networks, which return the same outputs given the real data and their encrypted forms under Leveled Fully Homomorphic Encryption. Nevertheless, these models are susceptible to catastrophic forgetting in incremental learning settings. Thus this paper will present a new low-rank adaptation method combined with the Gradient Projection Memory mechanism to minimize the issue. Our proposal is compatible with Leveled Fully Homomorphic Encryption while achieving a sharp improvement in performance compared to existing models.}
+}
+
+@article{tran2024boosting,
+  abbr = {ICLR},
+  title={Boosting Multiple Views for pretrained-based Continual Learning},
+  author={Quyen Tran* and Lam Tran* and Khanh Doan and Toan Tran and Khoat Than and Dinh Phung and Trung Le},
+  selected = {false},
+  published={true},
+  journal={Preprint},
+  pdf={https://openreview.net/forum?id=AZR4R3lw7y},
+  year={2025},
+  abstract={Recent research has shown that Random Projection (RP) can effectively improve the performance of pre-trained models in Continual learning (CL). The authors hypothesized that using RP to map features onto a higher-dimensional space can make them more linearly separable. In this work, we theoretically analyze the role of RP and present its benefits for improving the model’s generalization ability in each task and facilitating CL overall. Additionally, we take this result to the next level by proposing a Multi-View Random Projection scheme for a stronger ensemble classifier. In particular, we train a set of linear experts, among which diversity is encouraged based on the principle of AdaBoost, which was initially very challenging to apply to CL. Moreover, we employ a task-based adaptive backbone with distinct prompts dedicated to each task for better representation learning. To properly select these task-specific components and mitigate potential feature shifts caused by misprediction, we introduce a simple yet effective technique called the self-improvement process. Experimentally, our method consistently outperforms state-of-the-art baselines across a wide range of datasets.}
+
+}
+
+@article{le2024prefix,
+  abbr = {ICLR},
+  title={Revisiting Prefix-tuning: Statistical Benefits of Reparameterization among Prompts},
+  author={Minh Le and Chau Nguyen and Huy Nguyen and Tran, Quyen and Trung Le and Nhat Ho},
+  selected = {false},
+  published={true},
+  journal={Preprint},
+  pdf={https://arxiv.org/abs/2410.02200},
+  year={2025},
+  abstract={Prompt-based techniques, such as prompt-tuning and prefix-tuning, have gained prominence for their efficiency in fine-tuning large pre-trained models. Despite their widespread adoption, the theoretical foundations of these methods remain limited. For instance, in prefix-tuning, we observe that a key factor in achieving performance parity with full fine-tuning lies in the reparameterization strategy. However, the theoretical principles underpinning the effectiveness of this approach have yet to be thoroughly examined. Our study demonstrates that reparameterization is not merely an engineering trick but is grounded in deep theoretical foundations. Specifically, we show that the reparameterization strategy implicitly encodes a shared structure between prefix key and value vectors. Building on recent insights into the connection between prefix-tuning and mixture of experts models, we further illustrate that this shared structure significantly improves sample efficiency in parameter estimation compared to non-shared alternatives. The effectiveness of prefix-tuning across diverse tasks is empirically confirmed to be enhanced by the shared structure, through extensive experiments in both visual and language domains. Additionally, we uncover similar structural benefits in prompt-tuning, offering new perspectives on its success. Our findings provide theoretical and empirical contributions, advancing the understanding of prompt-based methods and their underlying mechanisms.}
+}
+
 @article{anh-etal-2025-mutual,
   abbr = {NAACL},
   title={Mutual-pairing Data Augmentation for Fewshot Continual Relation Extraction},
@@ -209,16 +213,15 @@
   abstract={Data scarcity is a major challenge in Few-shot Continual Relation Extraction (FCRE), where models must learn new relations from limited data while retaining past knowledge. Current methods, restricted by minimal data streams, struggle with catastrophic forgetting and overfitting. To overcome this, we introduce a novel *data augmentation strategy* that transforms single input sentences into complex texts by integrating both old and new data. Our approach sharpens model focus, enabling precise identification of word relationships based on specified relation types. By embedding adversarial training effects and leveraging new training perspectives through special objective functions, our method enhances model performance significantly. Additionally, we explore Sharpness-Aware Minimization (SAM) in Few-shot Continual Learning. Our extensive experiments uncover fascinating behaviors of SAM across tasks and offer valuable insights for future research in this dynamic field.}
 }
 
-@article{binh2025lowrank,
-  abbr = {CVPR},
-  title={Low-Rank Adaptation in Multilinear Operator Networks for Security-Preserving Incremental Learning},
-  author={Binh Ta and Duc Nguyen and Quyen Tran and Toan Tran and Tung Pham},
-  selected = {false},
+@article{nguyen2024fewshot,
+  abbr = {AAAI},
+  title={Few-Shot, No Problem: Descriptive Continual Relation Extraction},
+  author={Thanh Nguyen* and Anh Le* and Tran*, Quyen and Thien Le* and Linh Ngo and Thien Nguyen.},
+  selected = {true},
   published={true},
-  journal={Preprint},
-  pdf={https://openreview.net/forum?id=QR85vjmNWf},
+  abstract={Few-shot Continual Relation Extraction is a crucial challenge for enabling AI systems to identify and adapt to evolving relationships in dynamic real-world domains. Traditional memory-based approaches often overfit to limited samples, failing to reinforce old knowledge, with the scarcity of data in few-shot scenarios further exacerbating these issues by hindering effective data augmentation in the latent space. In this paper, we propose a novel retrieval-based solution, starting with a large language model to generate descriptions for each relation. From these descriptions, we introduce a bi-encoder retrieval training paradigm to enrich both sample and class representation learning. Leveraging these enhanced representations, we design a retrieval-based prediction method where each sample "retrieves" the best fitting relation via a reciprocal rank fusion score that integrates both relation description vectors and class prototypes. Extensive experiments on multiple datasets demonstrate that our method significantly advances the state-of-the-art by maintaining robust performance across sequential tasks, effectively addressing catastrophic forgetting.},
   year={2025},
-  abstract={In security-sensitive fields, data should be encrypted to protect against unauthorized access and maintain confidentiality throughout processing. However, traditional networks like ViTs and CNNs return different results when processing original data versus its encrypted form, meaning that they require data to be decrypted, posing a security risk by exposing sensitive information. One solution for this issue is using polynomial networks, including state-of-the-art Multilinear Operator Networks, which return the same outputs given the real data and their encrypted forms under Leveled Fully Homomorphic Encryption. Nevertheless, these models are susceptible to catastrophic forgetting in incremental learning settings. Thus this paper will present a new low-rank adaptation method combined with the Gradient Projection Memory mechanism to minimize the issue. Our proposal is compatible with Leveled Fully Homomorphic Encryption while achieving a sharp improvement in performance compared to existing models.}
+  pdf={https://ojs.aaai.org/index.php/AAAI/article/view/34715}
 }
 
 
