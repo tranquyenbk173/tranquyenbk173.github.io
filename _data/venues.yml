@@ -20,7 +20,15 @@
 
 "ICML":
   url: https://icml.cc/
-  color: "#4E6C50"
+  color: "#9561e2"
+
+"NAACL":
+  url: https://naacl.org/
+  color: "#f66d9b"
+
+"ICLR":
+  url: https://iclr.cc/
+  color: "#38c172"
 
 "Preprint":
   color: "#ffdddd"

@@ -5,5 +5,5 @@ title: CV
 nav: true
 nav_order: 4
 subtitle: Available in PDF format
-cv_pdf: Resume_QuyenTran.pdf
+cv_pdf: NewCV_Myself.pdf
 ---
