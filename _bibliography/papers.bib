@@ -62,6 +62,18 @@
   year={2022}
 }
 
+@article{phan2024mtlsam,
+  abbr = {ICCV},
+  title={Improving multi-task learning via seeking task-based flat regions},
+  author={Hoang Phan and Lam Tran and Tran, Quyen and Ngoc N Tran and Nhat Ho and Dinh Phung and Trung Le},
+  selected = {false},
+  published={true},
+  journal={Preprint},
+  pdf={https://arxiv.org/abs/2211.13723},
+  year={2025},
+  abstract={Multi-Task Learning (MTL) is a widely-used and powerful learning paradigm for training deep neural networks that allows learning more than one objective by a single backbone. Compared to training tasks separately, MTL significantly reduces computational costs, improves data efficiency, and potentially enhances model performance by leveraging knowledge across tasks. Hence, it has been adopted in a variety of applications, ranging from computer vision to natural language processing and speech recognition. Among them, there is an emerging line of work in MTL that focuses on manipulating the task gradient to derive an ultimate gradient descent direction to benefit all tasks. Despite achieving impressive results on many benchmarks, directly applying these approaches without using appropriate regularization techniques might lead to suboptimal solutions on real-world problems. In particular, standard training that minimizes the empirical loss on the training data can easily suffer from overfitting to low-resource tasks or be spoiled by noisy-labeled ones, which can cause negative transfer between tasks and overall performance drop. To alleviate such problems, we propose to leverage a recently introduced training method, named Sharpness-aware Minimization, which can enhance model generalization ability on single-task learning. Accordingly, we present a novel MTL training methodology, encouraging the model to find task-based flat minima for coherently improving its generalization capability on all tasks. Finally, we conduct comprehensive experiments on a variety of applications to demonstrate the merit of our proposed approach to …}
+}
+
 
 @article{truong2024flat,
   abbr = {ICML},
@@ -78,7 +90,7 @@
 @article{pham2024flat,
   abbr = {ICML},
   title={Promoting Ensemble Diversity with Interactive Bayesian Distributional Robustness for Finetuning Foundation Models},
-  author={Quan Pham* and Tuan Truong* and Tran*, Quyen and Tan Nguyen and Dinh Phung and Trung Le},
+  author={Quan Pham* and Tuan Truong* and Tran, Quyen and Tan Nguyen and Dinh Phung and Trung Le},
   selected = {false},
   published={true},
   journal={Proceeding of the Forty-Second International Conference on Machine Learning, 2025},
@@ -100,17 +112,7 @@
   abstract={Drawing inspiration from human learning behaviors, this work proposes a novel approach to mitigate catastrophic forgetting in Prompt-based Continual Learning models by exploiting the relationships between continuously emerging class data. We find that applying human habits of organizing and connecting information can serve as an efficient strategy when training deep learning models. Specifically, by building a hierarchical tree structure based on the expanding set of labels, we gain fresh insights into the data, identifying groups of similar classes could easily cause confusion. Additionally, we delve deeper into the hidden connections between classes by exploring the original pretrained model's behavior through an optimal transport-based approach. From these insights, we propose a novel regularization loss function that encourages models to focus more on challenging knowledge areas, thereby enhancing overall performance. Experimentally, our method demonstrated significant superiority over the most robust state-of-the-art models on various benchmarks.}
 }
 
-@article{phan2024mtlsam,
-  abbr = {Preprint},
-  title={Improving multi-task learning via seeking task-based flat regions},
-  author={Hoang Phan and Lam Tran and Tran, Quyen and Ngoc N Tran and Nhat Ho and Dinh Phung and Trung Le},
-  selected = {false},
-  published={true},
-  journal={Preprint},
-  pdf={https://arxiv.org/abs/2211.13723},
-  year={2024},
-  abstract={Multi-Task Learning (MTL) is a widely-used and powerful learning paradigm for training deep neural networks that allows learning more than one objective by a single backbone. Compared to training tasks separately, MTL significantly reduces computational costs, improves data efficiency, and potentially enhances model performance by leveraging knowledge across tasks. Hence, it has been adopted in a variety of applications, ranging from computer vision to natural language processing and speech recognition. Among them, there is an emerging line of work in MTL that focuses on manipulating the task gradient to derive an ultimate gradient descent direction to benefit all tasks. Despite achieving impressive results on many benchmarks, directly applying these approaches without using appropriate regularization techniques might lead to suboptimal solutions on real-world problems. In particular, standard training that minimizes the empirical loss on the training data can easily suffer from overfitting to low-resource tasks or be spoiled by noisy-labeled ones, which can cause negative transfer between tasks and overall performance drop. To alleviate such problems, we propose to leverage a recently introduced training method, named Sharpness-aware Minimization, which can enhance model generalization ability on single-task learning. Accordingly, we present a novel MTL training methodology, encouraging the model to find task-based flat minima for coherently improving its generalization capability on all tasks. Finally, we conduct comprehensive experiments on a variety of applications to demonstrate the merit of our proposed approach to …}
-}
+
 
 @article{doan2023dfmcl,
   abbr = {Preprint},
